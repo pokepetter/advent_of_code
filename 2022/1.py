@@ -1,4 +1,4 @@
-with open('input.txt', 'r') as f:
+with open('1_input.txt', 'r') as f:
     bags = [[int(e) for e in bag.split('\n') if e] for bag in f.read().split('\n\n')] # convert each paragraph to a list of numbers
     bags = [sum(e) for e in bags]
     bags.sort(reverse=True)
