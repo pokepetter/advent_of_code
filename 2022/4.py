@@ -17,7 +17,7 @@ for pair in all_pairs:
     # check if second contains all of first or first contains all of second and increment if it does
     pairs_with_complete_overlap += int(all(e in first for e in second) or all(e in second for e in first))
     # same, but with any overlap
-    pairs_with_some_overlap += int(any(e in first for e in second) or any(e in second for e in first))
+    pairs_with_some_overlap += int(any(e in first for e in second))
 
 print(pairs_with_complete_overlap)
 print(pairs_with_some_overlap)
